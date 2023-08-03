@@ -7,8 +7,8 @@ Docker image is available on https://hub.docker.com/r/salvq/simplehttpserver
 
 # Steps
 
-1. Create dedicated folder for the files you plan to expose via http server, example `/share/Container/simplehttpserver`
-2. Copy the files to this dedicated folder, example of `dump.txt` file location
+1. Create host folder for your files you plan to expose via http server, folder path example `/share/Container/simplehttpserver`
+2. Copy the files to the host folder, example of `dump.txt` file location
 ```
 [test@NASEFCasd2 simplehttpserver]$
 [test@NASEFCasd2 simplehttpserver]$ pwd
@@ -18,9 +18,9 @@ total 67696
 -rw-rw-rw- 1 user   everyone             32 2023-08-03 08:23 dump.txt
 [test@NASEFCasd2 simplehttpserver]$
 ```
-4. Dedicated folder `/share/Container/simplehttpserver` is defined in docker-run or decoker-compose.yaml below, change it accordingly
-5. Folder `/simplehttpserver` must stay unchanged, this is docker image folder mapped to host folder `/share/Container/simplehttpserver`
-6. Also change ports and network based on your requirements
+4. Host folder `/share/Container/simplehttpserver` is mapped via docker-run or decoker-compose.yaml below, change it accordingly based on your environment
+5. Folder `/simplehttpserver` must stay unchanged, this docker image folder is used by python script and is linked with your host folder `/share/Container/simplehttpserver`
+6. You may change your exposure ports and network based on your environment
 
 # Run server via docker-run
 
