@@ -5,8 +5,8 @@ Very simple http server to expose local files to local http request, example of 
 
 # Steps
 
-1. Create dedicated folder for filesto be exposed to http server, example `/share/Container/simplehttpserver`
-2. Copy the files to this dedicated folder, example of file location
+1. Create dedicated folder for the files you plan to expose via http server, example `/share/Container/simplehttpserver`
+2. Copy the files to this dedicated folder, example of `dump.txt` file location
 ```
 [test@NASEFCasd2 simplehttpserver]$
 [test@NASEFCasd2 simplehttpserver]$ pwd
