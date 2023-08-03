@@ -16,7 +16,7 @@ total 67696
 -rw-rw-rw- 1 user   everyone             32 2023-08-03 08:23 dump.txt
 [test@NASEFCasd2 simplehttpserver]$
 ```
-4. Dedicated folder is defined in docker-run or decoker-compose.yaml below, change it accordingly
+4. Dedicated folder `/share/Container/simplehttpserver` is defined in docker-run or decoker-compose.yaml below, change it accordingly
 5. Folder `/simplehttpserver` must stay unchanged, this is docker image folder mapped to host folder `/share/Container/simplehttpserver`
 6. Also change ports and network based on your requirements
 
