@@ -1,5 +1,5 @@
 # Simple HTTP server
-Very simple http server to expose local files to local http request, example of such a request
+Very simple http server to expose local files to http request, example of such a request
 
 ![image](https://github.com/salvq/simplehttpserver/assets/43242348/400fdff3-c062-4ef9-8f07-c993b52a6810)
 
