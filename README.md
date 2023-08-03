@@ -52,3 +52,17 @@ networks:
   others:
     external: true
 ```
+
+# Connect to docker container
+```
+[test@NASEFCasd2 simplehttpserver]$
+[test@NASEFCasd2 simplehttpserver]$ docker exec -it simplehttpserver bash
+simple@cd0b998d23cd:~$ pwd
+/script
+simple@cd0b998d23cd:~$ ls -ll
+total 4
+-rw-rw-rw- 1 root root 343 Jul 16 10:50 simple_server.py
+simple@cd0b998d23cd:~$ exit
+exit
+[test@NASEFCasd2 simplehttpserver]$
+```
