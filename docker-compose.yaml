@@ -5,17 +5,12 @@ services:
     container_name: simplehttpserver
     restart: unless-stopped
     ports:
-      - "8019:8000"
+      - "8000:8000"
     volumes:
       - /share/Container/simplehttpserver:/simplehttpserver
-    logging:
-      driver: "syslog"
-      options:
-        syslog-address: "tcp://192.168.1.106:514"
-        tag: "{{.Name}}/{{.ImageName}}"
     networks:
       others:
-         ipv4_address: 172.18.15.144
+         ipv4_address: 172.18.5.44
 networks:
   others:
     external: true
