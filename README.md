@@ -3,7 +3,7 @@ Very simple http server to expose local files to local http request, example of 
 
 ![image](https://github.com/salvq/simplehttpserver/assets/43242348/400fdff3-c062-4ef9-8f07-c993b52a6810)
 
-Docker image is available on [https://github.com/salvq/simplehttpserver](https://hub.docker.com/r/salvq/simplehttpserver)
+Docker image is available on https://hub.docker.com/r/salvq/simplehttpserver
 
 # Steps
 
