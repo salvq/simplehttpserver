@@ -6,10 +6,19 @@ Very simple http server to expose local files to local http request, example of 
 # Steps
 
 1. Create dedicated folder for filesto be exposed to http server, example `/share/Container/simplehttpserver`
-2. Copy the files to this dedicated folder
-3. Dedicated folder is defined in docker-run or decoker-compose.yaml below, change it accordingly
-4. Folder /simplehttpserver must stay unchanged, this is docker image folder mapped to host folder `/share/Container/simplehttpserver`
-5. Also change ports and network based on your requirements
+2. Copy the files to this dedicated folder, example of file location
+```
+[test@NASEFCasd2 simplehttpserver]$
+[test@NASEFCasd2 simplehttpserver]$ pwd
+/share/Container/simplehttpserver
+[test@NASEFCasd2 simplehttpserver]$ ls -ll
+total 67696
+-rw-rw-rw- 1 user   everyone             32 2023-08-03 08:23 dump.txt
+[test@NASEFCasd2 simplehttpserver]$
+```
+4. Dedicated folder is defined in docker-run or decoker-compose.yaml below, change it accordingly
+5. Folder /simplehttpserver must stay unchanged, this is docker image folder mapped to host folder `/share/Container/simplehttpserver`
+6. Also change ports and network based on your requirements
 
 # Run server via docker-run
 
